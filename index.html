@@ -12,42 +12,43 @@
 
 <body>
     <div class="outercontainer">
-        <div class="viewcontainer">0</div>
+        <div class="viewcontainer" id="viewresult">0</div>
         <div class="keypadcontainer">
             <div class="keypadgrid">
-                <button class="calculatorbutton key silverstyle">AC</button>
-                <button class="calculatorbutton key silverstyle">+/-</button>
-                <button class="calculatorbutton key silverstyle">%</button>
-                <button  class="calculatorbutton key orangestyle">&divide;</button>
+                <button class="calculatorbutton key silverstyle" data-value="AC" onclick="buttonClick(this)">AC</button>
+                <button class="calculatorbutton key silverstyle" data-value="+/-" onclick="buttonClick(this)">+/-</button>
+                <button class="calculatorbutton key silverstyle" data-value="%" onclick="buttonClick(this)">%</button>
+                <button  class="calculatorbutton key orangestyle" data-value="/" onclick="buttonClick(this)">&divide;</button>
             </div>
 
             <div class="keypadgrid">
-                <button class="calculatorbutton key greystyle">7</button>
-                <button class="calculatorbutton key greystyle">8</button>
-                <button class="calculatorbutton key greystyle">9</button>
-                <button  class="calculatorbutton key orangestyle">&times;</button>
+                <button class="calculatorbutton key greystyle" data-value="7" onclick="buttonClick(this)">7</button>
+                <button class="calculatorbutton key greystyle" data-value="8" onclick="buttonClick(this)">8</button>
+                <button class="calculatorbutton key greystyle" data-value="9" onclick="buttonClick(this)">9</button>
+                <button  class="calculatorbutton key orangestyle" data-value="*" onclick="buttonClick(this)">&times;</button>
             </div>
 
             <div class="keypadgrid">
-                <button class="calculatorbutton key greystyle">4</button>
-                <button class="calculatorbutton key greystyle">5</button>
-                <button class="calculatorbutton key greystyle">6</button>
-                <button  class="calculatorbutton key orangestyle">&minus;</button>
+                <button class="calculatorbutton key greystyle" data-value="4" onclick="buttonClick(this)">4</button>
+                <button class="calculatorbutton key greystyle" data-value="5" onclick="buttonClick(this)">5</button>
+                <button class="calculatorbutton key greystyle" data-value="6" onclick="buttonClick(this)">6</button>
+                <button  class="calculatorbutton key orangestyle" data-value="-" onclick="buttonClick(this)">&minus;</button>
             </div>
 
             <div class="keypadgrid">
-                <button class="calculatorbutton key greystyle">1</button>
-                <button class="calculatorbutton key greystyle">2</button>
-                <button class="calculatorbutton key greystyle">3</button>
-                <button  class="calculatorbutton key orangestyle">&plus;</button>
+                <button class="calculatorbutton key greystyle" data-value="1" onclick="buttonClick(this)">1</button>
+                <button class="calculatorbutton key greystyle" data-value="2" onclick="buttonClick(this)">2</button>
+                <button class="calculatorbutton key greystyle" data-value="3" onclick="buttonClick(this)">3</button>
+                <button  class="calculatorbutton key orangestyle" data-value="+" onclick="buttonClick(this)">&plus;</button>
             </div>
 
             <div class="keypadgrid">
-                <button class="calculatorbutton zerokey greystyle">0</button>
-                <button class="calculatorbutton key greystyle">.</button>
-                <button  class="calculatorbutton key orangestyle">=</button>
+                <button class="calculatorbutton zerokey greystyle" data-value="0"  onclick="buttonClick(this)">0</button>
+                <button class="calculatorbutton key greystyle"data-value="." onclick="buttonClick(this)">.</button>
+                <button  class="calculatorbutton key orangestyle" data-value="equal" onclick="buttonClick(this)">=</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
